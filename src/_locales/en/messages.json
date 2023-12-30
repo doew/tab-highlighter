@@ -1,0 +1,5 @@
+{
+  "extensionDescription": {
+    "message": "This Chrome extension displays a custom message and color bar at the top of the screen based on the host of the open web page. Users can set messages and colors for specific hosts, and these settings are automatically applied. If no message is set for a host, the bar will not be displayed. This extension is a useful tool for easy management and identification of web pages."
+  }
+}
