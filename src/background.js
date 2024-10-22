@@ -7,7 +7,9 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     const url = new URL(tab.url);
     chrome.storage.sync.get('hosts', (data) => {
       const hostSettings = data.hosts[url.hostname] || {};
-      chrome.tabs.sendMessage(tabId, { hostSettings });
+      const pathSettings = data.hosts[url.hostname + url.pathname] || {};
+      const combinedSettings = { ...hostSettings, ...pathSettings };
+      chrome.tabs.sendMessage(tabId, { hostSettings: combinedSettings });
     });
   }
 });
