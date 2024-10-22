@@ -6,4 +6,16 @@ A simple chrome extension to highlight tabs
 
 <img width="1908" alt="image" src="https://github.com/doew/tab-highlighter/assets/39424676/6a33ed94-2b8e-422b-a543-9fb7bbd668db">
 
+## Running Tests
 
+To run the tests for this project, follow these steps:
+
+1. Install the dependencies:
+   ```
+   npm install
+   ```
+
+2. Run the tests:
+   ```
+   npm test
+   ```
